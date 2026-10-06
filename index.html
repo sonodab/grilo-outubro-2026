@@ -489,7 +489,7 @@
             <span class="signature-mark">BS</span>
             <span class="signature-copy"><strong>Bruno Sonoda</strong><span>Planejamento de conteúdo</span></span>
           </div>
-          <span class="delivery-badge">4 conteúdos · Outubro 2026</span>
+          <a class="delivery-badge" href="https://drive.google.com/drive/folders/117eS7NgE40nvORHS28ix5fM8m8VtuEi5?usp=sharing" target="_blank" rel="noopener noreferrer">Acessar pasta no Drive</a>
         </div>
 
         <div class="hero-layout">
@@ -532,7 +532,7 @@
           <p class="section-eyebrow">Entrega mensal</p>
           <h2>Grilo Alimentos · Outubro 2026</h2>
         </div>
-        <a class="delivery-badge" href="#postsList">Voltar aos conteúdos</a>
+        <a class="delivery-badge" href="https://drive.google.com/drive/folders/117eS7NgE40nvORHS28ix5fM8m8VtuEi5?usp=sharing" target="_blank" rel="noopener noreferrer">Acessar pasta no Drive</a>
       </div>
     </footer>
 
@@ -543,7 +543,8 @@
         {
           category: "Grilo para o dia a dia",
           title: "Marmitas da semana: leveza e organização",
-          image: "assets/post-01.png",
+          image: "https://drive.google.com/thumbnail?id=1pqSWeei-cWhPZVEogvR6Tcoj1hbuGfyq&sz=w1600",
+          download: "https://drive.google.com/uc?export=download&id=1pqSWeei-cWhPZVEogvR6Tcoj1hbuGfyq",
           legend: `🥗 Na primavera, dá vontade de deixar a refeição mais leve — e a rotina também.
 
 Uma boa forma de ganhar tempo sem perder o frescor é preparar folhas bem secas, legumes cortados e a proteína já pronta para usar durante a semana.
@@ -561,7 +562,8 @@ Salve para testar na próxima organização da semana.
         {
           category: "Datas comemorativas",
           title: "Dia das Crianças: aquele lanche que vira lembrança",
-          image: "assets/post-02.png",
+          image: "https://drive.google.com/thumbnail?id=10W2GkMB__D_N4Px_mLzboVHudfXawqxI&sz=w1600",
+          download: "https://drive.google.com/uc?export=download&id=10W2GkMB__D_N4Px_mLzboVHudfXawqxI",
           legend: `Tem lanche que a criança esquece rápido. 🍟
 
 E tem lanche que vira história: batata frita, pão de queijo, suco de frutas, guardanapo na mesa e alguém dizendo \"senta aqui\". 🧃
@@ -579,7 +581,8 @@ Monte uma pausa gostosa e deixe o detalhe completar a cena.
         {
           category: "Grilo Profissional (B2B)",
           title: "Cuidado até nos pequenos detalhes",
-          image: "assets/post-03.png",
+          image: "https://drive.google.com/thumbnail?id=11MPttJiX3q7Tc4NnwrzvHTs98sWi8fXy&sz=w1600",
+          download: "https://drive.google.com/uc?export=download&id=11MPttJiX3q7Tc4NnwrzvHTs98sWi8fXy",
           legend: `Quando o pedido sai organizado, isso aparece na experiência de quem recebe.
 
 Deixar sachês, molhos, guardanapos e complementos já separados facilita a montagem, ajuda a conferir cada pedido e torna o envio mais correto e padronizado.
@@ -597,7 +600,8 @@ Organização também chega junto com o pedido.
         {
           category: "Receitas Grilo",
           title: "Macarrão frio com vinagrete de ervas",
-          image: "assets/post-04.png",
+          image: "https://drive.google.com/thumbnail?id=1_Gkourv0QBDBx4-M2gKgFAbeiI-eSVe9&sz=w1600",
+          download: "https://drive.google.com/uc?export=download&id=1_Gkourv0QBDBx4-M2gKgFAbeiI-eSVe9",
           legend: `Para o mês do macarrão, uma versão que funciona gelada.
 
 Ingredientes:
@@ -638,7 +642,7 @@ Vamos salvar para testar? 📌
         <article class="post-card">
           <div class="post-visual">
             <a class="post-image-link" href="${escapeHtml(post.image)}" target="_blank" rel="noopener"><img class="post-image" src="${escapeHtml(post.image)}" alt="${escapeHtml(post.title)}" width="1080" height="1350" loading="${index === 0 ? "eager" : "lazy"}"></a>
-            <div class="media-actions"><a class="image-download" href="${escapeHtml(post.image)}" download="Grilo-Alimentos-Outubro-2026-${String(index + 1).padStart(2, "0")}.png">Baixar imagem</a>
+            <div class="media-actions"><a class="image-download" href="${escapeHtml(post.download)}" target="_blank" rel="noopener noreferrer">Baixar imagem</a>
               ${post.comment ? `<details class="post-comment"><summary>Comentário <span class="comment-count">1</span></summary><p>${escapeHtml(post.comment)}</p></details>` : ""}
             </div>
           </div>
